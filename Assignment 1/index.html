@@ -7,8 +7,88 @@
     <meta name="author" content="Atlee Olofson">
     <meta name="description" content="This is the profile of Argentinian soccer star, Leo Messi">
     <meta name="keywords" content="Messi, FC Barcelona, PSG, Inter Miami, Argentina, Football, Soccer">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f0c808;
+        }
+
+        /* Styling h1 and p */
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Custom Class for Gallery Styling */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Mozilla CSS Property */
+        }
+
+        /* Custom Class for Section Styling */
+        .section-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#early-life">Early Life</a>
+        <a href="#club-career">Club Career</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#personal-life">Personal Life</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
     <!-- Header Section -->
     <header>
         <h1>Lionel Messi: The Greatest Footballer of All Time</h1>
@@ -18,19 +98,19 @@
     <!-- Main Section -->
     <main>
         <!-- Section 1: Early Life -->
-        <section>
+        <section id="early-life" class="section-container">
             <h2>Early Life</h2>
             <p>Lionel Messi was born on <em>June 24, 1987</em>, in Rosario, Argentina. He showed immense talent in football from a very young age, joining his local club, Newell's Old Boys. At the age of 13, he moved to Spain to join FC Barcelona's youth academy, La Masia.</p>
         </section>
 
         <!-- Section 2: Club Career -->
-        <section>
+        <section id="club-career" class="section-container">
             <h3>Club Career</h3>
             <p>Messi spent over two decades at FC Barcelona, where he became the club's all-time top scorer. In 2021, he moved to <a href="https://en.psg.fr/">Paris Saint-Germain (PSG)</a> and later joined <a href="https://www.intermiamicf.com/">Inter Miami</a> in 2023! Here he continued to showcase his brilliance on the field with both his skill and game IQ.</p>
         </section>
 
         <!-- Section 3: Career Achievements -->
-        <section>
+        <section id="achievements" class="section-container">
             <h3>Best Career Achievements</h3>
             <ol>
                 <li>FIFA World Cup Champion (2022)</li>
@@ -40,7 +120,7 @@
         </section>
 
         <!-- Section 4: Personal Life -->
-        <section>
+        <section id="personal-life" class="section-container">
             <h3>Personal Life</h3>
             <ul>
                 <li>Married to his wife, Antonela Roccuzzo</li>
@@ -50,11 +130,13 @@
         </section>
 
         <!-- Section 5: Gallery -->
-        <section>
+        <section id="gallery" class="section-container">
             <h3>Gallery</h3>
-            <img src="https://static01.nyt.com/athletic/uploads/wp/2022/12/18135027/GettyImages-1450109312-scaled.jpg" alt="Messi holding up the World Cup trophy">
-            <img src="https://www.usmagazine.com/wp-content/uploads/2022/12/Lionel-Messi-Celebrates-World-Cup-2022-Win-With-Wife-Antonela-Roccuzzo-and-kids-01.jpg?w=1000&quality=40&strip=all" alt="Messi with his family after winning the World Cup with Argentina">
-            <img src="https://media.gq.com/photos/610d6be4539f373b4ca1bd94/1:1/w_2693,h_2693,c_limit/GettyImages-955410340.jpg" alt="Messi celebrating a goal">
+            <div class="gallery">
+                <img src="https://static01.nyt.com/athletic/uploads/wp/2022/12/18135027/GettyImages-1450109312-scaled.jpg" alt="Messi holding up the World Cup trophy">
+                <img src="https://www.usmagazine.com/wp-content/uploads/2022/12/Lionel-Messi-Celebrates-World-Cup-2022-Win-With-Wife-Antonela-Roccuzzo-and-kids-01.jpg?w=1000&quality=40&strip=all" alt="Messi with his family after winning the World Cup with Argentina">
+                <img src="https://media.gq.com/photos/610d6be4539f373b4ca1bd94/1:1/w_2693,h_2693,c_limit/GettyImages-955410340.jpg" alt="Messi celebrating a goal">
+            </div>
         </section>
     </main>
 
@@ -62,5 +144,6 @@
     <footer>
         <p><strong>Lionel Messi Profile</strong> - Created by <em>Atlee Olofson</em></p>
     </footer>
+
 </body>
 </html>
